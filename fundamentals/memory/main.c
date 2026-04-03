@@ -19,5 +19,7 @@ int main(void) {
   for (int i = 0; i < num; i++) {
     printf("Position %d: %d\n", i, array[i]);
   }
+
+  free(array); // simulating a error, not freeing the heap memory.
   return 0;
 }
